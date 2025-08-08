@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.7)  8 AUG 2025 07:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.7)  8 AUG 2025 08:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,52 +23,73 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 )
+(c:/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+\col@sep=\dimen149
+\ar@mcellbox=\box53
+\extrarowheight=\dimen150
+\NC@list=\toks17
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box54
+)
+\TX@col@width=\dimen151
+\TX@old@table=\dimen152
+\TX@old@col=\dimen153
+\TX@target=\dimen154
+\TX@delta=\dimen155
+\TX@cols=\count283
+\TX@ftn=\toks18
+)
 (c:/texlive/2025/texmf-dist/tex/latex/tree-dvips/lingmacros.sty
-\c@enums=\count283
-\widelabel=\dimen149
-\c@tempcnt=\count284
-\c@enumsi=\count285
-\eeindent=\dimen150
+\c@enums=\count284
+\widelabel=\dimen156
+\c@tempcnt=\count285
+\c@enumsi=\count286
+\eeindent=\dimen157
 )
 (c:/texlive/2025/texmf-dist/tex/latex/tree-dvips/tree-dvips.sty
 tree-dvips version .91 of May 16, 1995
-\nodemargin=\dimen151
-\treelinewidth=\dimen152
-\dashlength=\dimen153
-\arrowwidth=\dimen154
-\arrowlength=\dimen155
-\arrowinset=\dimen156
-\pos@t=\toks17
-\pos@b=\toks18
-\pos@l=\toks19
-\pos@r=\toks20
-\pos@tl=\toks21
-\pos@tr=\toks22
-\pos@bl=\toks23
-\pos@br=\toks24
-\@arrow=\count286
-\@tempdimc=\dimen157
+\nodemargin=\dimen158
+\treelinewidth=\dimen159
+\dashlength=\dimen160
+\arrowwidth=\dimen161
+\arrowlength=\dimen162
+\arrowinset=\dimen163
+\pos@t=\toks19
+\pos@b=\toks20
+\pos@l=\toks21
+\pos@r=\toks22
+\pos@tl=\toks23
+\pos@tr=\toks24
+\pos@bl=\toks25
+\pos@br=\toks26
+\@arrow=\count287
+\@tempdimc=\dimen164
 ) (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count287
+\l__color_backend_stack_int=\count288
 )
 (./spec.aux)
 \openout1 = `spec.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 
 
 [1
@@ -76,27 +97,70 @@ LaTeX Font Info:    ... okay on input line 4.
 
 Non-PDF special ignored!
 <special> header=tree-dvips91.pro
-{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./spec.aux)
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/
+texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 63.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 63.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 63.
+
+Overfull \hbox (18.37125pt too wide) in paragraph at lines 63--82
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Overfull \hbox (18.37125pt too wide) in paragraph at lines 88--115
+[][] 
+ []
+
+
+
+[2]
+
+[3] (./spec.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 572 strings out of 467800
- 10030 string characters out of 5436069
- 428301 words of memory out of 5000000
- 29284 multiletter control sequences out of 15000+600000
- 628681 words of font info for 46 fonts, out of 8000000 for 9000
+ 734 strings out of 467800
+ 12409 string characters out of 5436069
+ 442301 words of memory out of 5000000
+ 29430 multiletter control sequences out of 15000+600000
+ 632102 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,5n,38p,165b,116s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 41i,8n,51p,209b,126s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on spec.pdf (1 page, 36588 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2025/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2025/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1200.pfb>
+Output written on spec.pdf (3 pages, 68692 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 40 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

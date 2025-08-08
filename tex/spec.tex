@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+\usepackage{tabularx}
 \usepackage{lingmacros}
 \usepackage{tree-dvips}
 \begin{document}
@@ -6,11 +7,228 @@
 	\section*{Micro-StudioPLC Specification}
 	
 	Open Standard for Inter Controller communications.
+
+	This specification covers the serial communication exchanges between any type of Controllers
+	(embedded devices, computers, SOC/SBC, etc ...).
+
+	Generally, MSPLC Software supports Application Class devices and kRT kernel supports any controller
+	with at least 1k of Flash and 100 bytes of Ram/Sram, a timer and a serial communication port.
+
+	The present specificaton is OS/Device agnostic, any device corresponding to the present document can
+	be interconnected and accessed through the MSPLS protocol.
+
+	V1.0 of the protocol defines a Kernel and User runtime application on a controller.
+	The protocol defines 135 base commands and supports arbitrary frames/extended commands.
+
+	The present Specification provides the tools to standardize peripheral access, for example
+
+	\begin{itemize}
+		\item A sensor (temperature, hygrometry, accelerometer, ...)
+		\item A peripheral (LCD Screen, HMI, ...)
+		\item A Generic MCU (microcontroller with Analog and Digital GPIOs)
+		\item An embedded controller (Raspberry, BeagleBoard, Arduino, ...)
+		\item An industrial controller (Open source and Arduino bases PLCs)
+	\end{itemize}
+
+	The Device manufacturers implements some of the specification commands as needed
+	and documents their Usage through the Datasheet/Man pages.
+
+	For example a miniman working device such as temperature sensor may be read through SPI Bus with the following command
+	\emph{g0ra}: Reads Channel 0 (temperature) as 16 bit signed integer.
+
+	In this example, the Thermometer CI only supports 1 command and 1 channel. Readback the Analog channel 0 provides
+	a direct reading of the temperature as 16-bit signed integer.
+
+	% This work is released under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
+	% To the extent possible under law, the author(s) have waived all copyright and related or neighboring rights to this work.
+	% For details, see https://creativecommons.org/publicdomain/zero/1.0/
 	
+	\vspace{2em}
+	{\small\textit{This document is released under the CC0 1.0 Universal Public Domain Dedication.\\
+  	https://creativecommons.org/publicdomain/zero/1.0/}}
+
 	\subsection*{Definitions}
 	
 	A \emph{Controller} is a generic term for any device which can be addressed via a serial bus.
 	
 	It can range from simple microcontrollers such as 8 Bits MCU with I2C/SPI to Modbus devices and custom or Open-Source PLC controllers.
-	
+
+	\subsection*{Command list}
+
+	Kernel Commands:\\
+
+	For complex devices, Kernel commands to control and monitor the state of the controller
+	can be implemented.\\
+
+\begin{tabular}{ | m{2.5em} | m{7em}| m{2.5em} | m{17em} | } 
+	\hline
+	Msg & Xch Spec & Hex & Description \\ 
+	\hline
+	M1 & skst, stopkst & 0x01 & Stop K-ST (Kernel Space scheduler) \\ 
+	\hline
+	M2 & rkst, runkst & 0x02 & Run K-ST (Kernel Space scheduler) \\
+	\hline
+	M4 & sys, systat & 0x04 & Read-back systat then reset min/max \\
+	\hline
+	M8 & clr, clear & 0x08 & Clear Fault and Alarm Words \\
+	\hline
+	M16 & sust, stopust & 0x10 & Stop U-ST (User Space scheduler) \\
+	\hline
+	M32 & rust, runust & 0x20 & Run U-ST (User Space scheduler) \\
+	\hline
+	M64 & sta, status & 0x40 & Return Status, Alarm and Fault words \\
+	\hline
+\end{tabular}
+
+	\vspace{2em}
+	User Commands:\\
+
+	Generic set of commands to Configure, Read and Write data from/to a controller\\
+
+\begin{tabular}{ | m{2.5em} | m{7em}| m{2.5em} | m{17em} | } 
+	\hline
+	Msg & Xch Spec & Hex & Description \\ 
+	\hline
+	M128 & g[n]ci & 0x80 & Set GPIO [n] as digital input \\
+	\hline
+	M129 & g[n]co & 0x81 & Set GPIO [n] as digital output \\
+	\hline
+	M130 & g[n]ca & 0x82 & Set GPIO [n] as analog input. Server responds with PWM resolution in bits. \\
+	\hline
+	M131 & g[n]cp & 0x83 & Set GPIO [n] as PWM output. Server responds with PWM resolution in bits. \\
+	\hline
+	M132 & & & \\
+	\hline
+	M133 & & & \\
+	\hline
+	M134 & g[n]cs+data & 0x86 & Configure special. User defined. \\
+	\hline
+	M135 & g[n]cr & 0x87 & Read-back GPIO [n] Configuration \\
+	\hline
+	M136 & g[n]cod & 0x88 & Configure GPIO [n] Open Drain (High Z) \\
+	\hline
+	M137 & g[n]cpu & 0x89 & Configure GPIO [n] Pull Up \\
+	\hline
+	M138 & g[n]cpd & 0x8a & Configure GPIO [n] Pull Down \\
+	\hline
+\end{tabular}
+
 \end{document}
+
+M139 &
+M140 &
+M141 &
+M142 &
+M143 &
+M144 &
+M145 &
+M146 &
+M147 &
+M148 &
+M149 &
+M150 &
+M151 &
+M152 &
+M153 &
+M154 &
+M155 &
+M156 &
+M157 &
+M158 &
+M159 &
+M160 &
+M161 &
+M162 &
+M163 &
+M164 &
+M165 &
+M166 &
+M167 &
+M168 &
+M169 &
+M170 &
+M171 &
+M172 &
+M173 &
+M174 &
+M175 &
+M176 &
+M177 &
+M178 &
+M179 &
+M180 & 
+M181 &
+M182 &
+M183 &
+M184 &
+M185 &
+M186 &
+M187 &
+M188 &
+M189 &
+M190 &
+M191 &
+M192 &
+M193 &
+M194 &
+M195 &
+M196 & 
+M197 &
+M198 &
+M199 &
+M200 &
+M201 &
+M202 &
+M203 &
+M204 &
+M205 &
+M206 &
+M207 &
+M208 &
+M209 &
+M210 &
+M211 &
+M212 &
+M213 &
+M214 &
+M215 &
+M216 &
+M217 &
+M218 &
+M219 & 
+M220 & 
+M221 &
+M222 &
+M223 &
+M224 &
+M225 &
+M226 &
+M227 &
+M228 &
+M229 &
+M230 &
+M231 &
+M232 &
+M233 &
+M234 &
+M235 &
+M236 &
+M237 &
+M238 &
+M239 &
+M240 &
+M241 &
+M242 &
+M243 &
+M244 &
+M245 &
+M246 &
+M247 &
+M248 &
+M249 &
+M250 &
+M251 &
+M252 &
+M253 &
+M254 &
+M255 &
